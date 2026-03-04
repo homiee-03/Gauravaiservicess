@@ -1,5 +1,5 @@
 const plans = [
-  { id: '15-users', name: '15 Users Ultra Shared', credits: '45k Credits', inr: 3000, usd: 22 },
+  { id: '15-users', name: '15 Users Ultra Shared', credits: '45k Credits', inr: 3000, usd: 33 },
   { id: '10-users', name: '10 Users Ultra Shared', credits: '135k Credits', inr: 4200, usd: 46 },
   { id: '5-users', name: '5 Users Ultra Shared', credits: '200k Credits', inr: 12000, usd: 130 },
   { id: '3-users', name: '3 Users Ultra Shared', credits: '225k Credits', inr: 18000, usd: 195 }
@@ -11,6 +11,19 @@ const countryStateMap = {
   UAE: ['Dubai', 'Abu Dhabi', 'Sharjah', 'Ajman', 'Ras Al Khaimah'],
   UK: ['England', 'Scotland', 'Wales', 'Northern Ireland']
 };
+
+
+function setupChatGptBuy() {
+  const chatBtn = document.getElementById('chatgpt-buy');
+  if (!chatBtn) return;
+
+  chatBtn.addEventListener('click', () => {
+    const chatPlan = { id: 'chatgpt-plus', name: 'ChatGPT Plus', credits: 'N/A', inr: 499, usd: 0 };
+    localStorage.setItem('currency', 'INR');
+    localStorage.setItem('selectedPlan', JSON.stringify(chatPlan));
+    localStorage.setItem('selectedPrice', '₹499');
+  });
+}
 
 function getCurrency() {
   return localStorage.getItem('currency') || 'INR';
@@ -197,4 +210,5 @@ document.addEventListener('DOMContentLoaded', () => {
   renderPlanDetailsPage();
   renderCheckoutPage();
   renderPaymentPage();
+  setupChatGptBuy();
 });

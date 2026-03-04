@@ -1,8 +1,6 @@
 const plans = [
-  { id: '15-users', name: 'Shared Accounts', credits: '45k Credits', inr: 3000, usd: 33 },
-  { id: '10-users', name: '10 Users Ultra Shared', credits: '135k Credits', inr: 4200, usd: 46 },
-  { id: '5-users', name: '5 Users Ultra Shared', credits: '200k Credits', inr: 12000, usd: 130 },
-  { id: '3-users', name: '3 Users Ultra Shared', credits: '225k Credits', inr: 18000, usd: 195 }
+  { id: '15-users', name: 'Gemini Ultra Shared Accounts', credits: '45k Credits', inr: 3000, usd: 33 },
+  { id: '10-users', name: '10 Users Ultra Shared', credits: '135k Credits', inr: 4200, usd: 46 }
 ];
 
 const countryStateMap = {

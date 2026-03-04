@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAURAV AI SERVICES | Gemini Plans</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <main class="mx-auto max-w-7xl px-4 py-10 md:px-6">
+    <header class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+      <h1 class="text-3xl font-bold md:text-4xl">Gemini Ultra Plans</h1>
+      <p class="mt-2 text-slate-300">Select the perfect tier for your needs</p>
+    </header>
+
+    <section class="mt-6 flex items-center justify-center gap-3 rounded-xl border border-slate-700 bg-slate-900 p-4">
+      <span class="font-semibold">INR (₹)</span>
+      <label class="relative inline-flex cursor-pointer items-center">
+        <input id="currency-toggle" type="checkbox" class="peer sr-only" />
+        <span class="h-6 w-11 rounded-full bg-slate-600 after:absolute after:left-[2px] after:top-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-blue-600 peer-checked:after:translate-x-full"></span>
+      </label>
+      <span class="font-semibold">USD ($)</span>
+      <span id="currency-label" class="rounded bg-blue-500/20 px-2 py-1 text-xs text-blue-200">Selected: INR</span>
+    </section>
+
+    <section id="plans-grid" class="mt-6 grid gap-5 md:grid-cols-2"></section>
+
+    <div class="mt-8">
+      <a href="index.html" class="text-sm text-blue-300 hover:text-blue-200">← Back to Home</a>
+    </div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
